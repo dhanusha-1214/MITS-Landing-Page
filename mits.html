@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MITS - Micro Information Technology Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("-translate-x-full");
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+  <div class="sticky top-0 left-0 bg-blue-600 text-white p-2 z-50 text-center text-sm font-medium">
+    <a href="#internship" class="hover:underline">Apply for Internship</a>
+  </div>
+
+  <div class="fixed top-2 left-2 z-50">
+    <button onclick="toggleSidebar()" class="p-2 bg-gray-800 text-white rounded focus:outline-none">
+      &#9776;
+    </button>
+  </div>
+
+  <div id="sidebar"
+    class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-40">
+    <nav class="p-5 space-y-4">
+      <h2 class="text-xl font-bold text-gray-700 mb-4">Navigation</h2>
+      <a href="#internship" class="block text-blue-600 hover:underline">Internship Application</a>
+      <a href="#offer" class="block text-blue-600 hover:underline">Offer Letter Generation</a>
+      <a href="#certificate" class="block text-blue-600 hover:underline">Certificate Verification</a>
+      <a href="#team" class="block text-blue-600 hover:underline">Join Our Team</a>
+      <a href="#contact" class="block text-blue-600 hover:underline">Contact Info</a>
+      <a href="#testimonials" class="block text-blue-600 hover:underline">Testimonials</a>
+      <a href="#faqs" class="block text-blue-600 hover:underline">FAQs</a>
+    </nav>
+  </div>
+
+  <div class="p-4 md:ml-10">
+    <section class="text-center py-12 bg-white shadow-md rounded-lg">
+      <h1 class="text-4xl font-bold text-gray-800">Micro Information Technology Services (MITS)</h1>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Empowering students through impactful internships, real-time projects, and global university affiliations to advance careers in technology and innovation.</p>
+    </section>
+    <section class="py-10">
+      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-700">University Affiliations</h2>
+       <div class="grid grid-cols-2 md:grid-cols-5 gap-6 px-4">
+        <img src="data:image/png;base64,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" alt="Anna University" class="mx-auto h-20" />
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/JNTU_Hyderabad_logo.png" alt="JNTU Hyderabad" class="mx-auto h-20" />
+        <img src="https://image-static.collegedunia.com/public/image/06-15:38-Vellore_Institute_of_Technology_seal_2017.svg.png" alt="VIT University" class="mx-auto h-20" />
+        <img src="https://static.wikia.nocookie.net/logopedia/images/f/fb/SRM.png/revision/latest?cb=20200401183643" alt="SRM University" class="mx-auto h-20" />
+        <img src="https://www.iaspaper.net/wp-content/uploads/2017/08/Amrita-University-Logo.png" alt="Amrita University" class="mx-auto h-20" />
+        <img src="https://www.getadmissioninfo.com/uploads/topics/manipal%20logo%20(1).png" alt="Manipal University" class="mx-auto h-20" />
+        <img src="https://cuetsamarth.com/wp-content/uploads/2024/01/UNIVERSITY_OF_HYDERABAD__logo-removebg-preview.png" alt="University of Hyderabad" class="mx-auto h-20" />
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Osmania_University_Logo.png" alt="Osmania University" class="mx-auto h-20" />
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/84/University_of_Delhi.png" alt="Delhi University" class="mx-auto h-20" />
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/IIT_Madras_Logo.svg/800px-IIT_Madras_Logo.svg.png" alt="IIT Madras" class="mx-auto h-20" />
+      </div>
+    </section>
+    <section class="py-10 bg-gray-100 text-center rounded-lg">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Network</h2>
+      <div class="flex justify-center gap-10 text-gray-700">
+        <div>
+          <p class="text-4xl font-bold">25K+</p>
+          <p>Followers</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold">10K+</p>
+          <p>Students Network</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold">500+</p>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+    </section>
+    <section id="internship" class="pt-10">
+      <h3 class="text-xl font-bold">Internship Application</h3>
+      <p class="mt-2 text-gray-700">Get real-time experience with guidance from IT professionals. Join now to boost your resume and knowledge!</p>
+    </section>
+
+    <section id="offer" class="pt-10">
+      <h3 class="text-xl font-bold">Offer Letter Generation</h3>
+      <p class="mt-2 text-gray-700">Submit details and receive your official internship offer letter within minutes.</p>
+    </section>
+
+    <section id="certificate" class="pt-10">
+      <h3 class="text-xl font-bold">Certificate Verification</h3>
+      <p class="mt-2 text-gray-700">Validate your internship certificate through our online verification tool.</p>
+    </section>
+
+    <section id="team" class="pt-10">
+      <h3 class="text-xl font-bold">Join Our Team</h3>
+      <p class="mt-2 text-gray-700">Be a part of our growing team and help empower thousands of students globally.</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="pt-10">
+      <h3 class="text-xl font-bold ">What Students Say</h3>
+      <div class="flex flex-col md:flex-row gap-6 mt-4">
+        <blockquote class="bg-white p-4 shadow rounded-lg">“MITS gave me the opportunity to work on real-world projects. Highly recommend!” – Anjali, VIT</blockquote>
+        <blockquote class="bg-white p-4 shadow rounded-lg">“Supportive mentors and great experience!” – Ramesh, SRM</blockquote>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faqs" class="pt-10">
+      <h3 class="text-xl font-bold ">Frequently Asked Questions</h3>
+      <div class="mt-4 space-y-4 max-w-2xl">
+        <div>
+          <strong>Q: Is the internship remote?</strong>
+          <p>A: Yes, we provide fully remote internships accessible from anywhere.</p>
+        </div>
+        <div>
+          <strong>Q: Will I get a certificate?</strong>
+          <p>A: Yes, a verified certificate is provided after successful completion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="pt-10">
+      <h3 class="text-xl font-bold">Contact Info</h3>
+      <ul class="text-gray-700 mt-2 space-y-2">
+        <li>LinkedIn: <a href="https://www.linkedin.com/company/mits-solution/?originalSubdomain=in" class="text-blue-600 hover:underline" target="_blank">MITS LinkedIn Page</a></li>
+        <li>Website: <a href="http://www.mitssolution.com" class="text-blue-600 hover:underline" target="_blank">www.mitssolution.com</a></li>
+        <li>Phone: <a href="tel:18008893655" class="text-blue-600 hover:underline">18008893655</a></li>
+        <li>Industry: Information Technology &amp; Services</li>
+        <li>Company Size: 51–200 employees</li>
+        <li>LinkedIn Members: 44 associated members</li>
+        <li>Founded: 2014</li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
